@@ -1,0 +1,17 @@
+.banner-container{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+  
+   
+}
+.banner-details{
+   margin-top: 50px;
+}
+.banner-img{
+    /* height: 60%; */
+  
+   
+}
