@@ -1,17 +1,41 @@
-.banner-container{
-    display: flex;
+.banner-container {
+    /* display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
     margin-top: 70px;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-right: 50px;
+    padding-left: 100px;
+    /* background-color:#9873FF; */
 
-  
+
+
+
+}
+
+.banner-details {
+    margin-top: 50px;
+    font-family: 'Manrope';
    
 }
-.banner-details{
-   margin-top: 50px;
+.banner-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
 }
-.banner-img{
-    /* height: 60%; */
-  
-   
+.dream{
+    color: #9873FF;
+}
+
+.banner-img {
+    height: 60%;
+
+
+}
+
+.get-start{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 5px;
+    font-family: 'Manrope';
 }

@@ -4,8 +4,8 @@ import'./Header.css'
 
 const Header = () => {
     return (
-        <nav className='header-container'>
-            <h3>Dream Job Hunter</h3>
+        <nav className='container header'>
+            <h3 className='header-title'>Dream Job Hunter</h3>
             <div className='links'>
                 <Link to="/statics">Statistics</Link>
                 <Link to="/AppliedJobs">Applied Jobs</Link>

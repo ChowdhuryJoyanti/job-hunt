@@ -1,13 +1,35 @@
-.header-container{
+.header{
     /* margin-right: 10px; */
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+   
+   
+    padding: 50px;
 }
-.links{
+/* .links{
     padding-right: 30px;
-}
+} */
 .apply{
     /* background-color: ; */
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 5px;
+    font-family: 'Manrope';
+}
+.header-title{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+}
+nav.header a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #757575;
+    font-family: 'Manrope';
+}
+nav.header a:hover{
+    color: blue;
 }
