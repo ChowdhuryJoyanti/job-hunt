@@ -1,0 +1,32 @@
+.feature-container{
+    width: 100%;
+    border: 3px solid rgb(164, 164, 164);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.job-description{
+    margin: 10px;
+    /* padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+    padding: 5px 15px 10px;
+    border: 2px solid #9873FF;
+    border-radius: 5px;
+    color: #9873FF;
+} 
+.location-description{
+    /* padding: 5px 15px 10px; */
+ 
+    border-radius: 5px;
+    color: #A3A3A3;
+    padding-right: 20px;
+
+}
+.location-img{
+    height: 25px;
+    width: 25px;
+    color: #A3A3A3;
+}
+

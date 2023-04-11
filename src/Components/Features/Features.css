@@ -1,0 +1,15 @@
+.features-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px;
+    margin: 30px;
+    padding: 30px;
+
+}
+.show-jobs{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 5px;
+    font-family: 'Manrope';
+    margin-right: 300px;
+   
+}
