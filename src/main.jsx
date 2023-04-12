@@ -9,16 +9,53 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Main from './Components/Layout/Main';
+import Card from './Components/Card/Card';
+import Statistics from './Components/Statistics/Statistics';
+import Common from './Components/Layout/Common';
+import Applied from './Components/Applied/Applied';
+import Blog from './Components/Blog/Blog';
 
   const router = createBrowserRouter([
     {
       path:'/',
       element:<Main></Main>,
+      // element:<Common></Common>,
+     
       children:[
+        // {
+        //   path:'/',
+        //   element:<Main></Main>
+        // },
+
         {
-          path:'/',
-          element:<Home></Home>
-        }
+          path:'/home',
+          element:<Home></Home>,
+         
+        },
+
+        {
+          path:'home',
+          element:<Home></Home>,
+        },
+        // {
+        //   path:'/',
+        //   element:<Card></Card>
+        // },
+        
+        {
+          path:'statistics',
+          element:<Statistics></Statistics>
+        },
+        {
+          path:'applied',
+          element:<Applied></Applied>,
+          loader: () => fetch('featuresData.json'),
+
+        },
+        {
+          path:'blog',
+          element:<Blog></Blog>
+        },
       ]
     }
   ])

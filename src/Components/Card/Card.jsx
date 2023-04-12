@@ -2,7 +2,7 @@ import React from 'react';
 import'./Card.css'
 
 const Card = (props) => {
-    console.log(props.list);
+    // console.log(props.list);
     const{name,jobs,img } = props.list;
 
 

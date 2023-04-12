@@ -2,14 +2,14 @@ import React from 'react';
 import './Feature.css'
 
 const Feature = (props) => {
-console.log(props.feature);
+// console.log(props.feature);
     
     const{companyLogo,jobTitle,companyName, jobDescription,jobDescriptions,location,locationLogo,salary,salaryLogo} = props.feature
 
     return (
         <div className='feature-container'>
             <img src={companyLogo} alt="" />
-            <h4>{jobTitle}</h4>
+            <h4 className='mt-3'>{jobTitle}</h4>
             <p>{companyName}</p>
             <div className='d-flex mt-2'>
                 <p className='job-description'>{jobDescription}</p>
