@@ -14,6 +14,7 @@ import Statistics from './Components/Statistics/Statistics';
 import Common from './Components/Layout/Common';
 import Applied from './Components/Applied/Applied';
 import Blog from './Components/Blog/Blog';
+import Banner from './Components/Banner/Banner';
 
   const router = createBrowserRouter([
     {
@@ -56,6 +57,10 @@ import Blog from './Components/Blog/Blog';
           path:'blog',
           element:<Blog></Blog>
         },
+        {
+          path:'statistics',
+          element:<Banner></Banner>
+        }
       ]
     }
   ])

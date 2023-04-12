@@ -1,0 +1,16 @@
+.banner{
+    background-color: rgb(216, 184, 247);
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+}
+.details{
+    padding: 75px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+ 
+}

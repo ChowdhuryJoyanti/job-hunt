@@ -1,0 +1,33 @@
+/* .container-blog{
+   background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%); 
+} */
+
+
+.question {
+    color: blueviolet;
+    background-color: rgb(221, 198, 230);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.questions {
+
+    color: rgb(35, 22, 36);
+    font-family: 'Manrope';
+    font-style: normal;
+   
+
+}
+
+.answer {
+ 
+  
+    color: #9873FF;
+    font-family: 'Manrope';
+    font-style: normal;
+   
+}
