@@ -15,7 +15,7 @@ const Features = () => {
   
 
     return (
-        <div className='container'>
+        <div className='container-fluid'>
             {/* <h3>this i s:{features.length}</h3> */}
             <h2 className='heading-catagory'>Featured Jobs</h2>
             <p className='card-job'>Explore thousands of job opportunities with all the information you need. Its your future</p>

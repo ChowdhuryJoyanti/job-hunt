@@ -7,7 +7,7 @@ const Feature = (props) => {
     const{companyLogo,jobTitle,companyName, jobDescription,jobDescriptions,location,locationLogo,salary,salaryLogo} = props.feature
 
     return (
-        <div className='feature-container'>
+        <div className=' container-fluid feature-container'>
             <img src={companyLogo} alt="" />
             <h4 className='mt-3'>{jobTitle}</h4>
             <p>{companyName}</p>
@@ -21,7 +21,7 @@ const Feature = (props) => {
                 <img className='location-img' src={salaryLogo} alt="" />
                 <p>{salary}</p>
             </div>
-          <button className='apply' >View Details</button>
+          <button onClick={ () =>handleViewDetails} className='apply'>View Details</button>
         </div>
     );
 };

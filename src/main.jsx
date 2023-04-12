@@ -15,12 +15,14 @@ import Common from './Components/Layout/Common';
 import Applied from './Components/Applied/Applied';
 import Blog from './Components/Blog/Blog';
 import Banner from './Components/Banner/Banner';
+import NotFound from './Components/NotFound/NotFound';
 
   const router = createBrowserRouter([
     {
       path:'/',
       element:<Main></Main>,
       // element:<Common></Common>,
+   
      
       children:[
         // {
@@ -28,16 +30,16 @@ import Banner from './Components/Banner/Banner';
         //   element:<Main></Main>
         // },
 
-        {
-          path:'/home',
-          element:<Home></Home>,
+        // {
+        //   path:'/home',
+        //   element:<Home></Home>,
          
-        },
+        // },
 
-        {
-          path:'home',
-          element:<Home></Home>,
-        },
+        // {
+        //   path:'home',
+        //   element:<Home></Home>,
+        // },
         // {
         //   path:'/',
         //   element:<Card></Card>
@@ -60,6 +62,10 @@ import Banner from './Components/Banner/Banner';
         {
           path:'statistics',
           element:<Banner></Banner>
+        },
+        {
+          path:'*',
+          element:<NotFound></NotFound>
         }
       ]
     }

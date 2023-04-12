@@ -8,7 +8,7 @@ import image from '../../../assets/All Images/P3OLGJ1 copy 1.png'
 
 const Home = () => {
     return (
-        <div className='container banner-container grid grid-cols-6' >
+        <div className='container-fluid banner-container' >
             <div className='banner-details'>
                 <h1 className='banner-title fw-bold'>One Step <br></br> Closer To Your<br></br><span className='dream'> Dream Job</span></h1>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it.

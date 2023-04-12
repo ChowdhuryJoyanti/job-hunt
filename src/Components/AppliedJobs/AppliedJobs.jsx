@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 
-const AppliedJobs = (props) => {
+const AppliedJobs = () => {
     console.log();
     return (
         <div>
