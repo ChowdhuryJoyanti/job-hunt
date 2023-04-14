@@ -1,12 +1,18 @@
 .banner-container {
     /* display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    justify-content: space-between; */
+    
+    /* align-items: center; */
+
+
+
+     /* margin-top: 70px; */
+    /* display: grid;
+    grid-template-columns: 2fr 1fr; */
     padding-right: 50px;
     padding-left: 100px;
+
+
     /* background-color:#9873FF; */
 
 

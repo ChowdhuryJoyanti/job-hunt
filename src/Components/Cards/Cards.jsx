@@ -23,7 +23,7 @@ const Cards = () => {
             <h2 className='heading-catagory'>Job Category List</h2>
             <p className='card-job'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-              <div  className='list-container d-flex'>
+              <div  className='list-container  d-sm-flex  d-md-flex d-lg-flex'>
               {
                     lists.map(list => <Card
                     key={list.id}

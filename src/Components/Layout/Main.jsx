@@ -11,11 +11,11 @@ const Main = () => {
         <div>
             <Header></Header>
             <Outlet></Outlet>
-            <Home></Home>
-            <Cards></Cards>
+             {/* <Home></Home> */}
+            {/* <Cards></Cards> */}
 
-            <Features></Features>
-          
+            {/* <Features></Features>  */}
+    
         </div>
     );
 };

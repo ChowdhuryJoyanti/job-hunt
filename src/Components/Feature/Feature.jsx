@@ -1,10 +1,10 @@
 import React from 'react';
 import './Feature.css'
 
-const Feature = (props) => {
+const Feature = ({feature,handleViewDetails}) => {
 // console.log(props.feature);
     
-    const{companyLogo,jobTitle,companyName, jobDescription,jobDescriptions,location,locationLogo,salary,salaryLogo} = props.feature
+    const{companyLogo,jobTitle,companyName, jobDescription,jobDescriptions,location,locationLogo,salary,salaryLogo,id} =feature
 
     return (
         <div className=' container-fluid feature-container'>
@@ -21,7 +21,7 @@ const Feature = (props) => {
                 <img className='location-img' src={salaryLogo} alt="" />
                 <p>{salary}</p>
             </div>
-          <button onClick={ () =>handleViewDetails} className='apply'>View Details</button>
+          <button onClick={() =>handleViewDetails(id)} className='apply'>View Details</button>
         </div>
     );
 };

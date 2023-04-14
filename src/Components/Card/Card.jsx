@@ -7,8 +7,8 @@ const Card = (props) => {
 
 
     return (
-        <div className='list-card'>
-         <img src={img} alt="" />
+        <div className='container list-card'>
+         <img className='img-fluid' src={img} alt="" />
          <h5 className='card-name'>{name}</h5>
          <p className='card-jobs'>{jobs}</p>
         </div>

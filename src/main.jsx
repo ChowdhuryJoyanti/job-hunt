@@ -16,6 +16,8 @@ import Applied from './Components/Applied/Applied';
 import Blog from './Components/Blog/Blog';
 import Banner from './Components/Banner/Banner';
 import NotFound from './Components/NotFound/NotFound';
+import JobDetails from './Components/JobDetails/JobDetails';
+import appliedJobsLoader from './Loaders/appliedjobsLoader';
 
   const router = createBrowserRouter([
     {
@@ -25,16 +27,16 @@ import NotFound from './Components/NotFound/NotFound';
    
      
       children:[
-        // {
-        //   path:'/',
-        //   element:<Main></Main>
-        // },
+        {
+          path:'/',
+          element:<Home></Home>
+        },
 
-        // {
-        //   path:'/home',
-        //   element:<Home></Home>,
+        {
+          path:'/home',
+          element:<Home></Home>,
          
-        // },
+        },
 
         // {
         //   path:'home',
@@ -52,7 +54,8 @@ import NotFound from './Components/NotFound/NotFound';
         {
           path:'applied',
           element:<Applied></Applied>,
-          loader: () => fetch('featuresData.json'),
+          // loader: () => fetch('featuresData.json'),
+          loader:appliedJobsLoader
 
         },
         {
@@ -63,6 +66,12 @@ import NotFound from './Components/NotFound/NotFound';
           path:'statistics',
           element:<Banner></Banner>
         },
+        {
+          path:'veiwDetails/:id',
+          element:<JobDetails></JobDetails>
+
+        },
+        
         {
           path:'*',
           element:<NotFound></NotFound>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import'./JobDetails.css'
+import JobDetail from '../JobDetail/JobDetail';
+import Banner from '../Banner/Banner';
 
 const JobDetails = () => {
 
-    cost [details,setDetails] = useState([]);
+    const [details,setDetails] = useState([]);
     useEffect(()=>{ 
             fetch('featuresData.json')
             .then(res => res.json())
@@ -13,11 +15,32 @@ const JobDetails = () => {
 
     const handleViewDetails = () => {
         console.log('dasdf');
+        const savedJobs = JSON.parse(localStorage.getItem('saved-Jobs'))
+        savedJobs.push(job)
+        localStorage.setItem(savedJobs)
     }
 
     return (
         <div>
-            
+          <Banner></Banner>
+                <div className='job-details'>
+
+                {
+                    details.map(detail => <JobDetail
+                    key={detail.id}
+                    detail={detail}
+                    handleViewDetails={handleViewDetails}
+
+
+                    ></JobDetail>)
+                }
+              
+
+                </div>
+                <div className="contact-details">
+
+                </div>
+
         </div>
     );
 };
